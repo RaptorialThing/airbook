@@ -1,7 +1,10 @@
- <!-- Калькулятор бюджета -->
+<?php
+echo '
+<html>
+<body>
   <script>
 function printMessage(){
-  document.getElementById('message_wrap').innerHTML = '<p>Если вы ответите на вопросы, мы сможем предложить вам варианты мест для вечеринки. Удачного дня, cегодня</p>';
+  document.getElementById(\'message_wrap\').innerHTML = \'<p>Если вы ответите на вопросы, мы сможем предложить вам варианты мест для вечеринки. Удачного дня, cегодня</p>\';
 }
 
 function showIframe() {
@@ -11,8 +14,8 @@ function showIframe() {
   </script>
  <div id="main_wrap" style="width: 50%; margin-right: auto; margin-left: auto;">
  <div id = "right_wrap" style="width: 40%; float: left;">
-  <p>Добро пожаловать в 'Конструктор вечеринок'</p>
- <form name="test" method="post" action="index.phtml">
+  <p>Добро пожаловать в \'Конструктор вечеринок\'</p>
+ <form name="test" method="post" action="index.php">
   <p><b>Ваше имя:</b><br>
    <input type="text" name="userName" size="40">
   </p>
@@ -30,15 +33,14 @@ function showIframe() {
  <div id="left_wrap" style="width: 20%; float: right;">
 <p>InfoTec</p>
  <div id="message_wrap"></div>
-<?php echo date("Y:m:d H:i:s"); ?>
+echo date("Y:m:d H:i:s"); 
 </div>
 <div id="location_wrap"></div>
 </div>
-<!-- // Выбор кафе -->
+</body>
+</html>
+';
 
-<!-- // Выбор коттеджа -->
-
-<?php
 function getPage($url) {
   if(!$url) {
     return false;
