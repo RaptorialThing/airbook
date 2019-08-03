@@ -15,7 +15,7 @@ function showIframe() {
  <div id="main_wrap" style="width: 50%; margin-right: auto; margin-left: auto;">
  <div id = "right_wrap" style="width: 40%; float: left;">
   <p>Добро пожаловать в \'Конструктор вечеринок\'</p>
- <form name="test" method="post" action="index.phtml">
+ <form name="test" method="post" action="index.php">
   <p><b>Ваше имя:</b><br>
    <input type="text" name="userName" size="40">
   </p>
